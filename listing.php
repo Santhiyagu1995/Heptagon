@@ -14,7 +14,7 @@ $sql = "SELECT * FROM `details` ";
 $result = $conn->query($sql);
 
 echo "<table border='1'>";
-echo "<th>Name</th><th>Email</th><th>EMP ID</th><th>EMP ID</th><th>Edit</th>";
+echo "<th>Name</th><th>Email</th><th>EMP ID</th><th>EMP ID</th>";
 while($row = mysqli_fetch_array($result))
 {	
 	echo "<tr><td>".$row['name']."</td><td>".$row['emp_id']."</td><td>".$row['email']."</td><td>" . $row['uploadfile']."</td></tr>";
