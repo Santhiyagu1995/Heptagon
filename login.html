@@ -129,11 +129,9 @@ span.psw {
 
 <h2>Login Form</h2>
 
-<button onclick="document.getElementById('login').style.display='block'" style="width:auto;">Login</button>
 
-<div id="login" class="modal">
   
-  <form class="modal-content animate" action="/login.php">
+  <form class="modal-content animate" action="/heptagon/login.php">
     <div class="imgcontainer">
       <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
       <img src="img_avatar2.png" alt="Avatar" class="avatar">
@@ -147,14 +145,8 @@ span.psw {
       <input type="password" placeholder="Enter Password" name="psw" required>
         
       <button id="submitlogin" type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
     </div>
 
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
-    </div>
   </form>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
